@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Belajar Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-rbsA2XbKQgncw9PytPCpAaG04m9OMb2iYRHWhb10GLw22fKQa3dP2YGU5G" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Penggajian</a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <h5>Tambah Karyawan</h5>
+            <form action="">
+                <div class="mb-3">
+                    <label for="nik" class="form-label">NIK :</label> <br>
+                    <input type="text" class="form-control" id="nik" name="nik" size="10" maxlength="10" required placeholder="misal: 123">
+                </div>                
+                <br>
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama :</label>
+                    <input type="text" class="form-control" id="nama" name="nama" required placeholder="misal: Fulan">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="tanggal_mulai" class="form-label">Tanggal Mulai :</label>
+                    <input type="date" class="form-control" id="tanggal_mulai" name="tanggal_mulai" required min="2022-01-11">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="gaji_pokok" class="form-label">Gaji Pokok :</label>
+                    <input type="number" class="form-control" id="gaji_pokok" name="gaji_pokok" required min="1000000" step="1000">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="status_karyawan" class="form-label">Status Karyawan :</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="status_karyawan" id="tetap" value="TETAP" checked>
+                      <label class="form-check-label" for="tetap">
+                        TETAP
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="status_karyawan" id="kontrak" value="KONTRAK">
+                      <label class="form-check-label" for="kontrak">
+                        KONTRAK
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="status_karyawan" id="magang" value="MAGANG">
+                      <label class="form-check-label" for="magang">
+                        MAGANG
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-success" id="btn_submit" name="btn_submit" value="Submit">
+                    <i class="fa fa-save"></i> Submit
+                  </button>
+                  <button type="reset" class="btn btn-primary" id="btn_reset" name="btn_reset" value="Reset">
+                    <i class="fa fa-arrows-rotate"></i> Reset
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+ykKQmQ2hZdQ7N30jw1y+14I4+1q" crossorigin="anonymous"></script>
+</body>
+</html>
